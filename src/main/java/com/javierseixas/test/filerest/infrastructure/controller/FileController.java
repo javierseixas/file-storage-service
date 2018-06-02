@@ -30,7 +30,7 @@ public class FileController {
             RedirectAttributes redirectAttributes
     ) {
 
-        File fileRecord = new File(name, description, new Date());
+        File fileRecord = new File(name, description, new Date(), file.getOriginalFilename());
 
         storageService.store(file);
         fileRepository.add(fileRecord);

@@ -9,12 +9,14 @@ public class File {
     private String name;
     private String description;
     private Date creationDate;
+    private String path;
 
-    public File(String name, String description, Date creationDate) {
+    public File(String name, String description, Date creationDate, String path) {
         this.uuid = UUID.randomUUID().toString();
         this.name = name;
         this.description = description;
         this.creationDate = creationDate;
+        this.path = path;
     }
 
     public String getUuid() {
@@ -31,5 +33,9 @@ public class File {
 
     public Date getCreationDate() {
         return creationDate;
+    }
+
+    public String getPath() {
+        return path;
     }
 }
