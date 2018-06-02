@@ -1,8 +1,10 @@
 package com.javierseixas.test.filerest.domain;
 
+import java.util.Collection;
+
 public interface FileRepository {
 
-    void get();
+    Collection<File> get();
 
     void add(File file);
 
