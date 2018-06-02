@@ -1,8 +1,8 @@
-package com.javierseixas.test.filerest.infrastructure.controller;
+package com.javierseixas.test.filestorageservice.infrastructure.controller;
 
-import com.javierseixas.test.filerest.domain.File;
-import com.javierseixas.test.filerest.domain.FileRepository;
-import com.javierseixas.test.filerest.infrastructure.storage.StorageService;
+import com.javierseixas.test.filestorageservice.domain.File;
+import com.javierseixas.test.filestorageservice.domain.FileRepository;
+import com.javierseixas.test.filestorageservice.infrastructure.storage.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

@@ -1,7 +1,7 @@
-package com.javierseixas.test.filerest.infrastructure.controller;
+package com.javierseixas.test.filestorageservice.infrastructure.controller;
 
-import com.javierseixas.test.filerest.domain.FileRepository;
-import com.javierseixas.test.filerest.infrastructure.storage.StorageService;
+import com.javierseixas.test.filestorageservice.domain.FileRepository;
+import com.javierseixas.test.filestorageservice.infrastructure.storage.StorageService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

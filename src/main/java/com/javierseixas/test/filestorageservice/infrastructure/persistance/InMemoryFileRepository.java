@@ -1,7 +1,7 @@
-package com.javierseixas.test.filerest.infrastructure.persistance;
+package com.javierseixas.test.filestorageservice.infrastructure.persistance;
 
-import com.javierseixas.test.filerest.domain.File;
-import com.javierseixas.test.filerest.domain.FileRepository;
+import com.javierseixas.test.filestorageservice.domain.File;
+import com.javierseixas.test.filestorageservice.domain.FileRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

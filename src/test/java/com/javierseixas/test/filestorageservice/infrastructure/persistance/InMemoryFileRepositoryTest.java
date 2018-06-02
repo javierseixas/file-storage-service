@@ -1,6 +1,6 @@
-package com.javierseixas.test.filerest.infrastructure.persistance;
+package com.javierseixas.test.filestorageservice.infrastructure.persistance;
 
-import com.javierseixas.test.filerest.domain.File;
+import com.javierseixas.test.filestorageservice.domain.File;
 import junit.framework.TestCase;
 
 import java.util.Arrays;

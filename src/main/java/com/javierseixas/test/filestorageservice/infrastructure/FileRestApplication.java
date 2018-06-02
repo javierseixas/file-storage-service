@@ -1,7 +1,7 @@
-package com.javierseixas.test.filerest.infrastructure;
+package com.javierseixas.test.filestorageservice.infrastructure;
 
-import com.javierseixas.test.filerest.infrastructure.storage.StorageProperties;
-import com.javierseixas.test.filerest.infrastructure.storage.StorageService;
+import com.javierseixas.test.filestorageservice.infrastructure.storage.StorageProperties;
+import com.javierseixas.test.filestorageservice.infrastructure.storage.StorageService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.javierseixas.test.filerest.infrastructure.storage;
+package com.javierseixas.test.filestorageservice.infrastructure.storage;
 
 public class StorageException extends RuntimeException {
 

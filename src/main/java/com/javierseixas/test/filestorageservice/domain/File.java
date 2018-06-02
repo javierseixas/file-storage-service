@@ -1,4 +1,4 @@
-package com.javierseixas.test.filerest.domain;
+package com.javierseixas.test.filestorageservice.domain;
 
 import java.util.Date;
 import java.util.UUID;
