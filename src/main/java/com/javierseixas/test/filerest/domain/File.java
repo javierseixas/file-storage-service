@@ -1,6 +1,7 @@
 package com.javierseixas.test.filerest.domain;
 
 import java.util.Date;
+import java.util.UUID;
 
 public class File {
 
@@ -9,8 +10,8 @@ public class File {
     private String description;
     private Date creationDate;
 
-    public File(String uuid, String name, String description, Date creationDate) {
-        this.uuid = uuid;
+    public File(String name, String description, Date creationDate) {
+        this.uuid = UUID.randomUUID().toString();
         this.name = name;
         this.description = description;
         this.creationDate = creationDate;
