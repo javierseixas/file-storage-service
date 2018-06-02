@@ -28,10 +28,16 @@ public class FileControllerTest {
     @MockBean
     private FileRepository fileRepository;
 
+    private  MockMultipartFile multipartFile;
+
+    @Before
+    public void setUp() {
+        this.multipartFile = new MockMultipartFile("file", "file.txt",
+                "text/plain", "Test file".getBytes());
+    }
+
     @Test
     public void shouldReturnOKifRequestIsCorrect() throws Exception {
-        MockMultipartFile multipartFile = new MockMultipartFile("file", "file.txt",
-                "text/plain", "Test file".getBytes());
 
         mvc.perform(multipart("/files")
                 .file(multipartFile)
@@ -46,9 +52,6 @@ public class FileControllerTest {
                 .param("name", "Nom")
                 .param("description", "Descripció"))
             .andExpect(status().is(400));
-
-        MockMultipartFile multipartFile = new MockMultipartFile("file", "file.txt",
-                "text/plain", "Test file".getBytes());
 
         mvc.perform(multipart("/files")
                 .file(multipartFile)
