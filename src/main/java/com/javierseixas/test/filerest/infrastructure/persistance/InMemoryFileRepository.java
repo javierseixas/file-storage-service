@@ -10,15 +10,23 @@ import java.util.Collection;
 @Repository
 public class InMemoryFileRepository implements FileRepository {
 
-    private final Collection<File> files = new ArrayList<>();
+    private Collection<File> files;
+
+    public InMemoryFileRepository(Collection<File> files) {
+        this.files = files;
+    }
+
+    public InMemoryFileRepository() {
+        files = new ArrayList<>();
+    }
 
     @Override
-    public Collection<File> get() {
+    public Collection<File> get () {
         return files;
     }
 
     @Override
-    public void add(File file) {
+    public void add (File file){
         files.add(file);
     }
 }
