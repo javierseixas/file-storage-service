@@ -36,7 +36,7 @@ task createDockerfile(type: Dockerfile) {
 }
 
 task syncWebAppArchive(type: Sync) {
-    dependsOn assemble
+    dependsOn build
     from war.archivePath
     into createDockerfile.destFile.parentFile
 }
