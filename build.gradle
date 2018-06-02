@@ -27,5 +27,6 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('com.drewnoakes:metadata-extractor:2.11.0')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
