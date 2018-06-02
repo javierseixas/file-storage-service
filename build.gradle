@@ -4,6 +4,7 @@ buildscript {
 	}
 	repositories {
 		mavenCentral()
+        jcenter()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -11,6 +12,7 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'war'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
@@ -21,7 +23,10 @@ sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
+    jcenter()
 }
+
+apply from: 'gradle/docker.gradle'
 
 
 dependencies {
