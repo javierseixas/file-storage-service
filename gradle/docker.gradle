@@ -46,7 +46,7 @@ createDockerfile.dependsOn syncWebAppArchive
 task buildImage(type: DockerBuildImage) {
     dependsOn createDockerfile
     inputDir = createDockerfile.destFile.parentFile
-    tag = "javierseixas/file-storage-service:$war.version javierseixas/file-storage-service:latest"
+    tags = ["javierseixas/file-storage-service:$war.version", "javierseixas/file-storage-service:latest"]
 }
 
 task pushImage(type: DockerPushImage) {
