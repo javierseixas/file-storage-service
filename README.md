@@ -25,4 +25,4 @@
 * `POST /files` endpoint should return `201`
 
 ## Product-debt
-* It should be a `GET /files` endpoint for retrieving all persisted files
+* ~~It should be a `GET /files` endpoint for retrieving all persisted files~~
