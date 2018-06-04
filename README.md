@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/javierseixas/file-storage-service.svg?branch=master)](https://travis-ci.org/javierseixas/file-storage-service)
 
+## Intro
+This service is built over Spring Boot. It give an API which stores files and persists file info in an InMemory DB.
+
 ## Run standalone
 ```
 ./gradlew bootRun
