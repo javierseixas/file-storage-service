@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 @RestController
 public class FileController {
@@ -36,5 +38,10 @@ public class FileController {
         fileRepository.add(fileRecord);
 
         return fileRecord;
+    }
+
+    @GetMapping("/files")
+    public Collection<File> handleFilesRetrieving() {
+        return fileRepository.get();
     }
 }
