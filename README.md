@@ -12,7 +12,12 @@
 ```
 
 ## Solution explanations
-* Considering File as main Domain Entity
+* Design: `main` application structure has two parts, following a tiny DDD approach:
+    * Domain: Has the principal entity `File` and a `FileRepository` Interface.
+    * Infrastructure: Where are all parts that depends on third parties, in the current case, Spring. It also have the `FileRepository` implementation.
+* CI: Every commit to `master` will trigger a travis-ci pipeline which will:
+    * build and test the application
+    * create a docker image and push it to Docker Hub
 
 ## Tech-debt
 * There are still some classes to be unit tested
